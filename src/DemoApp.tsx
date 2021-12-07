@@ -29,7 +29,13 @@ export const DemoApp = ({ name }: DemoAppProps) => {
     return (
         <div>
             <h1>Hello, {name}</h1>
-            <p>Here is some info about {user.firstName}</p>
+            {
+                !user.firstName ? (
+                    <p>Loading...</p>
+                ) : (
+                    <p>Here is some info about {user.firstName}</p>
+                )
+            }
         </div>
     )
 }
