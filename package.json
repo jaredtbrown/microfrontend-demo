@@ -2,13 +2,12 @@
     "name": "microfrontend-demo",
     "version": "1.0.0",
     "source": "src/index.tsx",
-    "outputFormat": "global",
     "author": "Jared Brown",
     "license": "MIT",
     "scripts": {
         "start": "parcel",
         "build": "parcel build",
-        "dev": "parcel example/index.html --dist-dir example-dist"
+        "demo": "parcel example/index.html --dist-dir example-dist"
     },
     "devDependencies": {
         "@types/react": "^17.0.37",
