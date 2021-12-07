@@ -8,9 +8,9 @@
     <div id="app"></div>
     <script>
         let script = document.createElement('script');
-        script.src = "http://localhost:1234/index.js" // This would be loaded from a URL instead of a local reference.
+        script.src = "http://localhost:1234/index.js"
         script.onload = function () {
-            renderDemoApp('app', { name: 'Bobby' })
+            renderDemoApp('app', { name: 'Bobby' }) // The name can be anything the consuming application wants to pass on.
         }
 
         document.head.appendChild(script)
