@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Container App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+        let script = document.createElement('script');
+        script.src = "http://localhost:1234/index.js" // This would be loaded from a URL instead of a local reference.
+        script.onload = function () {
+            renderDemoApp('app', { name: 'Bobby' })
+        }
+
+        document.head.appendChild(script)
+    </script>
+  </body>
+</html>
